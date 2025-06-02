@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rrobaqepësi Azura</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- GlideJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Rrobaqepësi Azura</h1>
+    <nav>
+      <a href="#">Rreth Nesh</a> |
+      <a href="#">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <h2>Mirësevini!</h2>
+      <p>Ne jemi një rrobaqepësi që punojmë me pasion që nga viti 2015.</p>
+      <p>Ofrojmë punime cilësore me çmime të arsyeshme.</p>
+      <a href="#" class="btn">Mëso më shumë</a>
+    </section>
+
+    <!-- Galeria me CSS Grid -->
+    <section class="image-grid" aria-label="Galeria e imazheve">
+      <img src="images/foto1.jpg" alt="Punim rrobaqepësi 1" />
+      <img src="images/foto2.jpg" alt="Punim rrobaqepësi 2" />
+      <img src="images/foto3.jpg" alt="Punim rrobaqepësi 3" />
+    </section>
+
+    <!-- KARUSELI me GlideJS -->
+    <section class="carousel-section" aria-label="Karuseli i Galerisë">
+      <h2>Galeria jonë</h2>
+      <div class="glide" role="region" aria-roledescription="carousel" aria-label="Foto të punimeve">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="images/foto1.jpg" alt="Foto 1" /></li>
+            <li class="glide__slide"><img src="images/foto2.jpg" alt="Foto 2" /></li>
+            <li class="glide__slide"><img src="images/foto3.jpg" alt="Foto 3" /></li>
+          </ul>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<" aria-label="Foto e mëparshme">‹</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">" aria-label="Foto e ardhshme">›</button>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0" aria-label="Shfaq foto 1"></button>
+          <button class="glide__bullet" data-glide-dir="=1" aria-label="Shfaq foto 2"></button>
+          <button class="glide__bullet" data-glide-dir="=2" aria-label="Shfaq foto 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seksioni Kontakt -->
+    <section class="contact-section" aria-label="Seksioni i kontaktit">
+      <h2>Kontakt</h2>
+      <div class="contact-info">
+        <p>Na kontaktoni në: <a href="tel:+35567000000">+355 67 000 000</a></p>
+        <p>Email: <a href="mailto:info@azura.com">info@azura.com</a></p>
+        <p>Adresa: Loni Ligori, Tirana, Shqipëri</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Rrobaqepësi Azura</p>
+  </footer>
+
+  <!-- GlideJS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
